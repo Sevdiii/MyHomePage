@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-left: 45px;
+}
+
+.links {
+    margin-right: 15px;
+    a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 20px;
+        &:hover {
+            color: #5221E6;
+        }
+    }
+}
