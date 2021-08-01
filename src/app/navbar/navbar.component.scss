@@ -1,12 +1,11 @@
-body {
-    margin: 0;
+section {
+    background-color: black;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
 }
 
 img {
@@ -17,16 +16,16 @@ img {
 }
 
 .links {
-    margin-right: 15px;
+    margin-right: 150px;
     a {
         color: white;
         text-decoration: none;
         list-style: none;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
         font-size: 20px;
         &:hover {
-            color: #5221E6;
+            color: #7649ffd3;
         }
     }
 }

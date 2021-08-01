@@ -1,0 +1,83 @@
+section {
+    background-color: black;
+}
+
+.My-work-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        color: white;
+    }
+}
+
+.category-skill {
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 150px;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        text-decoration: none;
+        margin-left: 5px;
+        border: 2px solid #7649ffd3;
+        padding: 15px;
+        color: white;
+        width: 110px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+
+.myproject {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px;
+    img {
+        width: 380px;
+        height: 250px;
+        object-fit: contain;
+    }
+}
+
+.project {
+    position: relative;
+    color: white;
+    #pics {
+        &:hover {
+            filter: opacity(0.2)
+        }
+    }
+    .name-of-projekt {
+        position: absolute;
+        color: white;
+        top: 30px;
+        left: 150px;
+    }
+    .projekt-description {
+        position: absolute;
+        top: 70px;
+        left: 130px;
+        width: 200px;
+        font-size: 20px;
+    }
+    .go-to-projekt {
+        position: absolute;
+        bottom: 60px;
+        left: 150px;
+        button {
+            background: none;
+            color: white;
+            border: 3px solid #7649ffd3;
+            padding: 10px;
+            width: 100px;
+        }
+    }
+}
+
+.d-none {
+    display: none;
+}

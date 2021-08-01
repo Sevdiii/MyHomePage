@@ -1,0 +1,28 @@
+<section>
+    <div class="My-work-container">
+        <h3>My work</h3>
+
+        <div class="category-skill">
+
+            <a href="#">All</a>
+            <a href="#">Angular</a>
+            <a href="#">Java Script</a>
+        </div>
+
+        <div class="myproject" *ngFor="let img of ProjectImg; let i = index;">
+            <div class="project">
+                <img onmouseover="ShowInfo()" id="pics" src="{{img}}" alt="">
+                <div id="name" class="name-of-projekt d-none">
+                    <h5>{{ProjectName[i]}}</h5>
+                </div>
+                <div class="projekt-description">
+                    <p>{{ ProjectDescription[i]}}</p>
+                </div>
+                <div class="go-to-projekt">
+                    <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

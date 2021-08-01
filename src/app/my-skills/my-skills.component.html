@@ -1,0 +1,17 @@
+<section>
+    <div class="my-skills-container">
+        <h2>My Skills</h2>
+
+        <div class="skill-boxes-container">
+            <div class="skill-boxes" *ngFor="let img of Skills; let i = index;">
+
+                <div class="circle">
+                    <img id="skill-pics" src="{{Skills[i]}}" alt="">
+                </div>
+                <div class="skillname">
+                    {{Skillname[i]}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
