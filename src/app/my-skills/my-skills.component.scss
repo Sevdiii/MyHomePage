@@ -3,6 +3,7 @@ section {
 }
 
 .my-skills-container {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -11,8 +12,10 @@ section {
 }
 
 .skill-boxes-container {
+    padding-top: 100px;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: 0.1fr 0.1fr 0.1fr;
     padding-bottom: 40px;
 }

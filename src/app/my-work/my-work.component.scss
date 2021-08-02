@@ -1,19 +1,23 @@
 section {
     background-color: black;
-}
-
-.My-work-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.My-work-container {
+    padding-bottom: 100px;
     h3 {
         color: white;
+        text-align: center;
     }
 }
 
 .category-skill {
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     margin-bottom: 150px;
     a {
@@ -24,9 +28,9 @@ section {
         text-decoration: none;
         margin-left: 5px;
         border: 2px solid #7649ffd3;
-        padding: 15px;
+        padding: 20px;
         color: white;
-        width: 110px;
+        width: 140px;
         height: 30px;
         font-size: 20px;
     }
@@ -34,8 +38,10 @@ section {
 
 .myproject {
     display: grid;
-    grid-template-columns: 100px 100px;
     grid-gap: 10px;
+    grid-template-columns: .1fr .1fr;
+    width: 380px;
+    height: 250px;
     img {
         width: 380px;
         height: 250px;
@@ -46,11 +52,6 @@ section {
 .project {
     position: relative;
     color: white;
-    #pics {
-        &:hover {
-            filter: opacity(0.2)
-        }
-    }
     .name-of-projekt {
         position: absolute;
         color: white;
@@ -75,6 +76,21 @@ section {
             padding: 10px;
             width: 100px;
         }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 225ms ease-in-out;
+    &:hover {
+        transition: opacity 225ms ease-in-out;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
 

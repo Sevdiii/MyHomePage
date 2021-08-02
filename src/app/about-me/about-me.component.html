@@ -1,0 +1,57 @@
+<section class="section1">
+
+    <div class="profil-pic">
+        <img src="../assets/img/sevdi.png" alt="">
+    </div>
+
+    <div class="progress-Bar">
+
+        <div class="about-me">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque quisquam id rerum adipisci magnam fuga, sunt ipsum repellat accusantium saepe iste nobis aspernatur nesciunt eveniet minus, maiores recusandae quae!</p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Java Script</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">Angular</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Wordpress</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Firebase Datenbanken</div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Scrum</div>
+        </div>
+    </div>
+
+
+
+
+
+</section>
+
+<section class="section2">
+    <div class="journeys">
+        <div class="journey" *ngFor="let journeyImg of JourneyPics; let i = index;">
+            <img id="journeypiccs" src="{{journeyImg[i]}}" alt="">
+            <div class="info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consequatur quia earum eligendi sunt, iste sit vero nisi tempore, dignissimos culpa, aspernatur illum dolor ipsa reprehenderit recusandae cupiditate perspiciatis. Ut!
+            </div>
+        </div>
+    </div>
+</section>

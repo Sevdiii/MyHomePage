@@ -11,16 +11,19 @@
 
         <div class="myproject" *ngFor="let img of ProjectImg; let i = index;">
             <div class="project">
-                <img onmouseover="ShowInfo()" id="pics" src="{{img}}" alt="">
-                <div id="name" class="name-of-projekt d-none">
-                    <h5>{{ProjectName[i]}}</h5>
+                <img src="{{img}}" alt="">
+                <div class="overlay">
+                    <div id="name" class="name-of-projekt ">
+                        <h5>{{ProjectName[i]}}</h5>
+                    </div>
+                    <div class="projekt-description">
+                        <p>{{ ProjectDescription[i]}}</p>
+                    </div>
+                    <div class="go-to-projekt">
+                        <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
+                    </div>
                 </div>
-                <div class="projekt-description">
-                    <p>{{ ProjectDescription[i]}}</p>
-                </div>
-                <div class="go-to-projekt">
-                    <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
-                </div>
+
 
             </div>
         </div>
