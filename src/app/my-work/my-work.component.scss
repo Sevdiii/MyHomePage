@@ -40,11 +40,9 @@ section {
 }
 
 .myproject {
+    width: 100%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: .1fr .1fr;
-    width: 380px;
-    height: 250px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     img {
         width: 380px;
         height: 250px;
