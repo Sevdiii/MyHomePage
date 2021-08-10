@@ -1,4 +1,4 @@
-<section class="section1">
+<section id="aboutme" class="section1">
 
     <div class="profil-pic">
         <img src="../assets/img/Bewerbungsfoto_Final.jpg" alt="">
@@ -7,7 +7,7 @@
     <div class="progress-Bar">
 
         <div class="about-me">
-            <h2>About me</h2>
+            <h3>About me</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque quisquam id rerum adipisci magnam fuga, sunt ipsum repellat accusantium saepe iste nobis aspernatur nesciunt eveniet minus, maiores recusandae quae!</p>
         </div>
         <div class="progress">
@@ -48,7 +48,10 @@
 <section class="section2">
     <div class="journeys">
         <div class="journey" *ngFor="let journeyImg of JourneyPics; let i = index;">
-            <img id="journeypiccs" src="{{journeyImg[i]}}" alt="">
+            <div class="journey-circle">
+                <img id="journeypiccs" src="{{journeyImg}}" alt="">
+            </div>
+
             <div class="info">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consequatur quia earum eligendi sunt, iste sit vero nisi tempore, dignissimos culpa, aspernatur illum dolor ipsa reprehenderit recusandae cupiditate perspiciatis. Ut!
             </div>

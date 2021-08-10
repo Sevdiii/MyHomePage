@@ -1,6 +1,6 @@
 section {
     background-color: black;
-    height: 60vh;
+    height: 95vh;
 }
 
 .myprofil {
@@ -8,8 +8,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 250px;
     p {
-        font-size: 70px;
+        font-size: 80px;
     }
     span {
         color: #7649ffd3;
@@ -21,8 +22,8 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 200px;
-        padding: 15px;
+        width: 250px;
+        padding: 20px;
         margin-top: -15px;
         font-size: 20px;
         border: 2px solid #23FCD8;
@@ -31,7 +32,19 @@ section {
             color: #23FCD8;
             background: none;
         }
+        &:hover {
+            background-color: #7649ffd3;
+            cursor: pointer;
+        }
+        &:hover a {
+            color: white;
+            font-weight: bold;
+        }
     }
+}
+
+.info-text {
+    width: 900px;
 }
 
 img {
@@ -47,11 +60,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 400px;
     .arrow-pic {
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
         object-fit: contain;
         object-position: center;
+        cursor: pointer;
     }
 }

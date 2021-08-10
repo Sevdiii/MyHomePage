@@ -24,9 +24,8 @@
         text-align: justify;
         color: white;
     }
-    h2 {
-        font-weight: bolder;
-        font-size: 35px;
+    h3 {
+        font-size: 40px;
     }
 }
 
@@ -82,13 +81,22 @@
     margin-left: 85px;
 }
 
+.journey-circle {
+    background-color: #23FCD8;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 3px;
+}
+
 #journeypiccs {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 45px;
+    height: 45px;
+    background-color: #2DFCD8;
+    border-radius: 100%;
 }
 
 .info {
+    padding-top: 15px;
     color: white;
     font-size: 12px;
     text-align: justify;
