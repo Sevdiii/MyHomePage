@@ -39,7 +39,7 @@ img {
     height: 300px;
     object-fit: cover;
     border-radius: 100%;
-    object-position: floor($number: -20px);
+    object-position: top;
 }
 
 .arrow {
