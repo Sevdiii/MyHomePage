@@ -3,12 +3,16 @@ section {
     height: 95vh;
 }
 
+.mat-body,
+.mat-body-1,
 .myprofil {
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-top: 250px;
+    font: 400 14px/100px Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
     p {
         font-size: 80px;
     }
@@ -23,8 +27,9 @@ section {
         justify-content: center;
         align-items: center;
         width: 250px;
-        padding: 20px;
-        margin-top: -15px;
+        height: 80px;
+        padding: 10px;
+        margin-top: 35px;
         font-size: 20px;
         border: 2px solid #23FCD8;
         a {
@@ -67,5 +72,29 @@ img {
         object-fit: contain;
         object-position: center;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info-text p {
+        font-size: 15px;
+    }
+    .myprofil {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .profil-pic img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    #contact {
+        width: 100px;
+        height: 80px;
+    }
+    .contact-button {
+        width: 100px;
+        height: 80px;
     }
 }

@@ -9,23 +9,54 @@
             <a href="#">Java Script</a>
         </div>
 
-        <div class="myproject" *ngFor="let img of ProjectImg; let i = index;">
-            <div class="project">
-                <img src="{{img}}" alt="">
-                <div class="overlay">
-                    <div id="name" class="name-of-projekt ">
-                        <h5>{{ProjectName[i]}}</h5>
-                    </div>
-                    <div class="projekt-description">
-                        <p>{{ ProjectDescription[i]}}</p>
-                    </div>
-                    <div class="go-to-projekt">
-                        <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
-                    </div>
-                </div>
+
+        <div class="div">
 
 
-            </div>
+            <mat-grid-list cols="3" rowHeight="260px" style="width: 1000px;">
+                <mat-grid-tile *ngFor="let img of ProjectImg; let i = index;">
+                    <div class="project">
+                        <img src="{{img}}" alt="">
+                        <div class="overlay">
+                            <div id="name" class="name-of-projekt ">
+                                <h5>{{ProjectName[i]}}</h5>
+                            </div>
+                            <div class="projekt-description">
+                                <p>{{ ProjectDescription[i]}}</p>
+                            </div>
+                            <div class="go-to-projekt">
+                                <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </mat-grid-tile>
+
+            </mat-grid-list>
         </div>
+
+        <!-- <mat-grid-list cols="2" width="900px">
+            <mat-grid-tile width="500px">
+                <div class="myproject" *ngFor="let img of ProjectImg; let i = index;">
+                    <div class="project">
+                        <img src="{{img}}" alt="">
+                        <div class="overlay">
+                            <div id="name" class="name-of-projekt ">
+                                <h5>{{ProjectName[i]}}</h5>
+                            </div>
+                            <div class="projekt-description">
+                                <p>{{ ProjectDescription[i]}}</p>
+                            </div>
+                            <div class="go-to-projekt">
+                                <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>-->
     </div>
 </section>

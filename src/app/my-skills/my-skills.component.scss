@@ -57,3 +57,12 @@ section {
         margin-top: 10px;
     }
 }
+
+@media (max-width: 1000px) {
+    .skill-boxes-container {
+        width: 100%;
+        .skill-boxes {
+            width: 90px;
+        }
+    }
+}

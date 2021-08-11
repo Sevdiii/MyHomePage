@@ -7,21 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
-  ProjectImg = ['../assets/img/Sharkie-gaming.jpg', '../assets/img/Quiz.jpg', '../assets/img/Lieferando.jpg', '../assets/img/ringoffire.jpg'];
-  ProjectName = ['Sharkie', 'Quiz-Game', 'Lieferando', 'Ring of Fire'];
-  ProjectDescription = ['JavaScript -  Swim-Game', '', ' Warenkorb Funktion', 'Angular - Kartenspiel'];
-  ProjectUrl = ['http://sevdi-azizi.developerakademie.com/El-poco-loco-Shark/index.html', 'http://sevdi-azizi.developerakademie.com/Quiz/quiz.html', 'http://sevdi-azizi.developerakademie.com/Lieferando/index.html'];
+  ProjectImg = ['../assets/img/kochwelt.jpg!d', '../assets/img/Quiz.jpg', '../assets/img/Lieferando.jpg', '../assets/img/crm.jpg!d', '../assets/img/join1.jpg', '../assets/img/tic-tac-toe.jpg'];
+  ProjectName = ['Kochwelt', 'Quiz-Game', 'Lieferando', 'Simple CRM', 'Join', 'Tic-Tac-Toe'];
+  ProjectDescription = ['Introduction HTML/CSS', 'based -  JavaScript', 'Create shopping cart', 'Introduction - Angular ', 'Teamwork - GitHub', 'Introduction - JavaScript'];
+  ProjectUrl = ['http://sevdi-azizi.developerakademie.com/Kochwelt_Final/index.html', 'http://sevdi-azizi.developerakademie.com/Quiz/quiz.html', 'http://sevdi-azizi.developerakademie.com/Lieferando/index.html', 'dfd', 'http://sevdi-azizi.developerakademie.com/Join/index.html', 'http://sevdi-azizi.developerakademie.com/TicTacToe/tictactoe.html'];
   
    
 
 
   
-  
+
   
   
   constructor() { }
 
+
+
   ngOnInit(): void {
+
+   
   }
 
 }

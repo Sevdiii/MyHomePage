@@ -27,14 +27,15 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ContactMeComponent,
     FooterComponent,
     ImpressumComponent,
-    MatGridListModule
+  
   
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
