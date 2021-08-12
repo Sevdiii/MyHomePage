@@ -12,27 +12,30 @@
 
         <div class="div">
 
+            <div class="grid">
 
-            <mat-grid-list cols="3" rowHeight="260px" style="width: 1000px;">
-                <mat-grid-tile *ngFor="let img of ProjectImg; let i = index;">
-                    <div class="project">
-                        <img src="{{img}}" alt="">
-                        <div class="overlay">
-                            <div id="name" class="name-of-projekt ">
-                                <h5>{{ProjectName[i]}}</h5>
-                            </div>
-                            <div class="projekt-description">
-                                <p>{{ ProjectDescription[i]}}</p>
-                            </div>
-                            <div class="go-to-projekt">
-                                <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
+
+                <mat-grid-list [cols]="breakpoint" rowHeight="280px" (window:resize)="onResize($event)" style="width: 1000px;">
+                    <mat-grid-tile *ngFor="let img of ProjectImg; let i = index;">
+                        <div class="project">
+                            <img src="{{img}}" alt="">
+                            <div class="overlay">
+                                <div id="name" class="name-of-projekt ">
+                                    <h5>{{ProjectName[i]}}</h5>
+                                </div>
+                                <div class="projekt-description">
+                                    <p>{{ ProjectDescription[i]}}</p>
+                                </div>
+                                <div class="go-to-projekt">
+                                    <a target="_blank" href="{{ProjectUrl[i]}}"><button>Try out</button></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </mat-grid-tile>
+                    </mat-grid-tile>
 
-            </mat-grid-list>
+                </mat-grid-list>
+            </div>
         </div>
 
         <!-- <mat-grid-list cols="2" width="900px">

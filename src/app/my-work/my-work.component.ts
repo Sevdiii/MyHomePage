@@ -21,11 +21,16 @@ export class MyWorkComponent implements OnInit {
   
   constructor() { }
 
-
+breakpoint: number;
 
   ngOnInit(): void {
-
+    this.breakpoint = (window.innerWidth <= 1000) ? 1:3;
    
   }
+
+  onResize(event) {
+
+  }
+
 
 }

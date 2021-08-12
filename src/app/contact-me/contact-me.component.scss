@@ -29,3 +29,22 @@ a {
         border: 1px solid white;
     }
 }
+
+.form-control {
+    color: white;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .drai {
+        text-align: center;
+        font-size: 12px;
+        p {
+            font-size: 12px;
+        }
+    }
+    .form-control {
+        color: white;
+        font-size: 12px;
+    }
+}

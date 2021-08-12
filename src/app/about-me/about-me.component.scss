@@ -50,7 +50,6 @@
     padding-left: 15px;
     font-size: 18px;
     background-color: #7649ffd3;
-    ;
 }
 
 .journeys {
@@ -69,8 +68,7 @@
 }
 
 .journeys {
-    margin-left: 55px;
-    margin-right: 55px;
+    width: 1500px;
 }
 
 .journey {
@@ -100,4 +98,62 @@
     color: white;
     font-size: 12px;
     text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .profil-pic img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me h3 {
+        font-size: 25px;
+    }
+    .about-me p {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+    .progress-Bar {
+        width: 250px;
+    }
+    .journeys {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .journey {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .info {
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    #journeypiccs {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
 }

@@ -1,100 +1,113 @@
-section {
-    background-color: black;
-    height: 95vh;
-}
-
-.mat-body,
-.mat-body-1,
-.myprofil {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 250px;
-    font: 400 14px/100px Roboto, "Helvetica Neue", sans-serif;
-    letter-spacing: normal;
-    p {
-        font-size: 80px;
+    section {
+        background-color: black;
+        height: 95vh;
     }
-    span {
-        color: #7649ffd3;
+    
+    .mat-body,
+    .mat-body-1,
+    .myprofil {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 250px;
+        font: 400 14px/100px Roboto, "Helvetica Neue", sans-serif;
+        letter-spacing: normal;
+        p {
+            font-size: 80px;
+        }
+        span {
+            color: #7649ffd3;
+        }
+        .span2 {
+            color: #2DFCD8;
+        }
+        .contact-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 80px;
+            padding: 10px;
+            margin-top: 35px;
+            font-size: 20px;
+            border: 2px solid #23FCD8;
+            a {
+                text-decoration: none;
+                color: #23FCD8;
+                background: none;
+            }
+            &:hover {
+                background-color: #7649ffd3;
+                cursor: pointer;
+            }
+            &:hover a {
+                color: white;
+                font-weight: bold;
+            }
+        }
     }
-    .span2 {
-        color: #2DFCD8;
+    
+    .info-text {
+        width: 1000px;
     }
-    .contact-button {
+    
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 100%;
+        object-position: top;
+    }
+    
+    .arrow {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
-        height: 80px;
-        padding: 10px;
-        margin-top: 35px;
-        font-size: 20px;
-        border: 2px solid #23FCD8;
-        a {
-            text-decoration: none;
-            color: #23FCD8;
-            background: none;
-        }
-        &:hover {
-            background-color: #7649ffd3;
+        margin-top: 400px;
+        .arrow-pic {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            object-position: center;
             cursor: pointer;
         }
-        &:hover a {
+    }
+    
+    @media (max-width: 1000px) {
+        .info-text {
+            width: 200px;
+        }
+        .info-text p {
+            font-size: 15px;
+        }
+        .myprofil {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .profil-pic img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .contact-button {
+            width: 100px;
+            height: 100px;
+        }
+        .arrow {
+            display: none;
+        }
+        .mat-body,
+        .mat-body-1,
+        .myprofil {
             color: white;
-            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 250px;
+            font: 400 14px/44px Roboto, "Helvetica Neue", sans-serif;
+            letter-spacing: normal;
         }
     }
-}
-
-.info-text {
-    width: 1000px;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 100%;
-    object-position: top;
-}
-
-.arrow {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 400px;
-    .arrow-pic {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        object-position: center;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 1000px) {
-    .info-text p {
-        font-size: 15px;
-    }
-    .myprofil {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .profil-pic img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
-    #contact {
-        width: 100px;
-        height: 80px;
-    }
-    .contact-button {
-        width: 100px;
-        height: 80px;
-    }
-}
