@@ -69,6 +69,15 @@
         animation: AnimationPic 1s ease-in-out;
     }
     
+    @keyframes AnimationPic {
+        from {
+            transform: scaleY(0);
+        }
+        to {
+            transform: scaleY(1);
+        }
+    }
+    
     img {
         width: 300px;
         height: 300px;
@@ -76,15 +85,6 @@
         border-radius: 100%;
         object-position: top;
         z-index: 10;
-    }
-    
-    @keyframes AnimationPic {
-        from {
-            transform: scale(0);
-        }
-        to {
-            transform: scale(1);
-        }
     }
     
     .arrow {
@@ -103,6 +103,9 @@
     }
     
     @media (max-width: 1000px) {
+        section {
+            height: 110vh;
+        }
         .info-text {
             width: 200px;
         }
