@@ -37,6 +37,7 @@
         object-fit: cover;
         border-radius: 100%;
         object-position: right;
+        border: 1px solid #7649ffd3;
     }
 }
 
@@ -65,10 +66,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .journeys {
-    width: 1500px;
+    width: 85%;
 }
 
 .journey {
@@ -91,6 +93,12 @@
     height: 45px;
     background-color: #2DFCD8;
     border-radius: 100%;
+}
+
+.topic {
+    margin-top: 25px;
+    color: #23FCD8;
+    font-size: 25px;
 }
 
 .info {
@@ -152,8 +160,16 @@
         margin-top: 15px;
     }
     #journeypiccs {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         object-fit: cover;
+    }
+    .topic {
+        font-size: 20px !important;
+    }
+    .info {
+        margin-bottom: 25px;
+        font-size: 10px !important;
+        width: 210px;
     }
 }

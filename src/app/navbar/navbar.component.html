@@ -8,5 +8,29 @@
             <a href="#aboutme">ABOUT</a>
             <a href="#portfolio">PORTFOLIO</a>
         </div>
+
+
     </div>
 </section>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <a href="#/">HOME</a>
+        <a href="#aboutme">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+
+        <a routerLink="impressum">IMPRESSUM</a>
+        <a routerLink="datenschutz">DATENSCHUTZ</a>
+
+
+
+
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <button class="menu-button-resp" type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+</mat-drawer-container>

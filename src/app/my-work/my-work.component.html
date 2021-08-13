@@ -15,7 +15,7 @@
             <div class="grid">
 
 
-                <mat-grid-list [cols]="breakpoint" rowHeight="280px" (window:resize)="onResize($event)" style="width: 1000px;">
+                <mat-grid-list [cols]="breakpoint" rowHeight="230px" style="width: 900px;" (window:resize)="onResize($event)">
                     <mat-grid-tile *ngFor="let img of ProjectImg; let i = index;">
                         <div class="project">
                             <img src="{{img}}" alt="">
